@@ -1,0 +1,7 @@
+<?php
+require_once __DIR__ . '/../posBackend/checkIfLoggedIn.php';
+$rows=db('SELECT k.*,m.item_name FROM Kitchen k LEFT JOIN Menu m ON m.item_id=k.item_id WHERE k.time_ended IS NULL ORDER BY k.time_submitted,k.kitchen_id')->fetch_all(MYSQLI_ASSOC);
+$staffRefresh=5;
+include __DIR__ . '/../inc/dashHeader.php';
+?><div class="page-header"><?php ui_heading('Kitchen Orders','Pending tickets refresh every five seconds. Mark each ticket Done when it is ready.','Kitchen'); ?><form method="post" action="../posBackend/kitchenBackend/undo.php"><?= csrf_field() ?><button class="btn btn-warning" name="UndoUnshow" value="true" <?= empty($_SESSION['last_kitchen_done'])?'disabled':'' ?>>Undo</button></form></div>
+<?php if(!$rows) ui_empty('No pending kitchen orders.','New orders will appear here when an item is added to a bill.'); else { ui_table_start(['Kitchen ID','Table ID','Item name','Quantity','Submitted at','Action'],'Pending kitchen orders'); foreach($rows as $row): ?><tr><td><?= h($row['kitchen_id']) ?></td><td><?= h($row['table_id']) ?></td><td><?= h($row['item_name'] ?? 'Deleted item') ?></td><td><?= h($row['quantity']) ?></td><td><?= h($row['time_submitted']) ?></td><td><form method="post" action="../posBackend/kitchenBackend/kitchen-panel-back.php"><?= csrf_field() ?><input type="hidden" name="action" value="set_time_ended"><input type="hidden" name="kitchen_id" value="<?= h($row['kitchen_id']) ?>"><button class="btn btn-primary btn-small">Done</button></form></td></tr><?php endforeach; ui_table_end(); } include __DIR__ . '/../inc/dashFooter.php'; ?>

@@ -1,0 +1,10 @@
+restoProject
+
+Based on RestaurantProject by BryanTheLai and contributors:
+https://github.com/BryanTheLai/RestaurantProject
+
+Contributors credited by the original project: Bryan, Yong, Kevin, and Edzer.
+This version includes changes to authentication, role checks, database integrity,
+payments, reservations, PDF output, responsive UI, and installation.
+
+FPDF 1.86 is included with its license in adminSide/posBackend/fpdf186/license.txt.

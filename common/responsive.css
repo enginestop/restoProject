@@ -1,0 +1,22 @@
+*{box-sizing:border-box} body{min-width:0} img,video{max-width:100%} input,select,textarea{max-width:100%}
+.app-content{margin:80px 24px 32px 245px!important;width:auto!important;max-width:none!important}
+.table-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.table-responsive{overflow-x:auto} .login-container,.register-container{width:min(100%,500px)!important;padding:24px!important}
+.login_wrapper,.register_wrapper,.wrapper{max-width:100%!important}.reserve-container{width:min(100%,760px);padding:16px}
+.reserve-container .column{width:100%!important;flex:1 1 280px}.reserve-container .row{display:flex;flex-wrap:wrap}
+@media(max-width:991px){
+.app-content{margin:80px 16px 24px!important}body.sb-nav-fixed>.container,body.sb-nav-fixed>.container-fluid,body.sb-nav-fixed>.row{margin:72px 12px 20px!important;width:calc(100% - 24px)!important}
+body.sb-nav-fixed div[style*="margin-left"],body.sb-nav-fixed div[style*="margin-right"]{margin-left:0!important;margin-right:0!important;width:100%!important;max-width:100%!important}
+body.sb-nav-fixed div[style*="width:150%"],body.sb-nav-fixed div[style*="width: 150%"]{width:100%!important}
+.ht-600.w-50{width:100%!important}.login-container,.register-container{margin:24px auto!important}
+body:has(.reserve-container){height:auto!important;min-height:100vh;display:block!important}.user-profile{position:relative!important;z-index:2}
+}
+
+body.sb-nav-fixed>.wrapper{margin:80px 24px 32px 245px!important;padding:0!important;width:calc(100% - 269px)!important;max-width:none!important}
+body.sb-nav-fixed .wrapper table{display:block;overflow-x:auto;max-width:100%}
+.form-group{margin-bottom:16px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.login-container a,.register-container a{color:white!important;text-decoration:underline}
+#signup{width:min(100%,420px);max-width:100%}#signup .wrapper{width:100%}
+.dropdown:focus-within .dropdown-content,.dropdown.open .dropdown-content{display:block}
+.social-item a{color:white;font-size:14px}.msg{width:100%}.user-profile{position:fixed;bottom:10px;left:10px;background:#222;padding:8px;z-index:1001}
+@media(max-width:991px){body.sb-nav-fixed>.wrapper{margin:80px 12px 24px!important;width:calc(100% - 24px)!important;padding:0!important}}

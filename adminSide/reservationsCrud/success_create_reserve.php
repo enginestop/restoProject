@@ -1,0 +1,1 @@
+<?php require_once __DIR__ . '/../posBackend/checkIfLoggedIn.php'; include __DIR__ . '/../inc/dashHeader.php'; ui_heading('Reservations','Return to the reservation list to view saved reservations.'); ?><section class="surface"><a class="btn btn-primary" href="../panel/reservation-panel.php">View reservations</a></section><?php include __DIR__ . '/../inc/dashFooter.php'; ?>

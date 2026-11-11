@@ -1,0 +1,8 @@
+Options -Indexes
+AddDefaultCharset UTF-8
+<FilesMatch "(?i)(^\.|^config\.php$|^migrate_passwords\.php$|\.(sql|txt|md|sh|py|json|log|patch|gz|flag)$|^LICENSE$)">
+Require all denied
+</FilesMatch>
+RedirectMatch 403 ^/(deployment|database|bin|docs|tests|artifacts|\.git|\.agents|\.codex|\.aws)(/|$)
+RedirectMatch 403 ^/adminSide/posBackend/fpdf186/
+RedirectMatch 403 ^/common/.*\.php$

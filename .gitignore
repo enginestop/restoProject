@@ -1,0 +1,29 @@
+# Runtime configuration and credentials
+.env
+.env.*
+!.env.example
+/database.php
+**/database.local.php
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local evidence and development state
+/artifacts/
+/.playwright-mcp/
+/.agents/
+/.codex/
+/.aws/
+/restaurantProject.md
+/restaurantDB.txt
+/Bug_Fixing.md
+__pycache__/
+*.pyc
+*.log
+*.sql.gz
+*.tar.gz
+*.zip
+setup_completed.flag
+.DS_Store
+Thumbs.db
