@@ -1,6 +1,6 @@
 # Screenshot aplikasi
 
-Galeri halaman utama, formulir, dan status aplikasi yang diuji. Gambar menggunakan data contoh dari sesi validasi; instalasi baru dimulai dengan database kosong. Screenshot menunjukkan keadaan UI pada saat pengambilan, termasuk beberapa hasil transaksi uji yang sudah dibersihkan.
+Galeri 57 screenshot halaman desktop, formulir, status aplikasi, dan PDF yang diuji. Gambar menggunakan data contoh dari sesi validasi. Screenshot menunjukkan keadaan UI pada saat pengambilan, termasuk beberapa hasil transaksi uji yang sudah dibersihkan.
 
 Klik judul untuk membuka gambar. Halaman alias memakai tampilan yang sama; endpoint pemrosesan dan pengalihan tidak mempunyai halaman tersendiri.
 
@@ -480,34 +480,6 @@ Halaman: `/adminSide/panel/account-panel.php`.
 
 </details>
 
-<details>
-<summary>Menu pelanggan setelah difilter</summary>
-
-![Menu pelanggan setelah difilter](screenshots/menu-filtered.png)
-
-</details>
-
-<details>
-<summary>Informasi kontak</summary>
-
-![Informasi kontak](screenshots/contact.png)
-
-</details>
-
-<details>
-<summary>Navigasi staf pada ponsel</summary>
-
-![Navigasi staf pada ponsel](screenshots/staff-menu-open.png)
-
-</details>
-
-<details>
-<summary>Navigasi pelanggan pada ponsel</summary>
-
-![Navigasi pelanggan pada ponsel](screenshots/customer-menu-open.png)
-
-</details>
-
 ## Struk dan laporan PDF
 
 <details>
@@ -528,42 +500,5 @@ Halaman: `/adminSide/panel/account-panel.php`.
 <summary>Laporan pendapatan</summary>
 
 ![Laporan pendapatan](screenshots/pdf-report.png)
-
-</details>
-
-## Contoh tampilan responsif
-
-<details>
-<summary>Beranda pelanggan — 375 px</summary>
-
-![Beranda pelanggan — 375 px](screenshots/home-375.png)
-
-</details>
-
-<details>
-<summary>Tambah staf — 375 px</summary>
-
-![Tambah staf — 375 px](screenshots/create-staff-375.png)
-
-</details>
-
-<details>
-<summary>Pesanan dan keranjang — 375 px</summary>
-
-![Pesanan dan keranjang — 375 px](screenshots/cart-375.png)
-
-</details>
-
-<details>
-<summary>Pembayaran tunai berhasil — 320 px</summary>
-
-![Pembayaran tunai berhasil — 320 px](screenshots/cash-completed-320.png)
-
-</details>
-
-<details>
-<summary>Pendapatan dengan transaksi contoh — 375 px</summary>
-
-![Pendapatan dengan transaksi contoh — 375 px](screenshots/populated-statistics-375.png)
 
 </details>
